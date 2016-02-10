@@ -1,0 +1,15 @@
+<html ng-app="example">
+  <head>
+    <script src="angular.min.js"></script>
+    <script src="example.js"></script>
+  </head>
+  <body ng-controller="exampleController as example">
+	 <div >
+	  <center>
+	  	<li ng-repeat="products in example.products">
+	  		<div ng-show="products.show">{{products.id}} - {{products.name}}</div>
+		 </li>
+	  </center>
+	 </div>
+  </body>
+</html>

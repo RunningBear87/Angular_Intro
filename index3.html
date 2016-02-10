@@ -1,0 +1,23 @@
+<html ng-app="example">
+  <head>
+    <script src="angular.min.js"></script>
+    <script src="example.js"></script>
+  </head>
+  <body ng-controller="exampleControllerTwo as exampleTwo">
+	<div>
+		<a ng-click="exampleTwo.selectTab(0)" href="">Amber Sky Records Premium</a>
+	</div>
+	<div>
+		<a ng-click="exampleTwo.selectTab(1)" href="">Get Reel 2.0</a>
+	</div>
+	<div>
+		<a ng-click="exampleTwo.selectTab(2)" href="">Feature Presentation</a>
+	</div>
+	<div>
+		<a ng-click="exampleTwo.selectTab(3)" href="">Wonder</a>
+	</div>
+	<BR>
+	<div><b>Product Description</b></div>
+	<div>{{exampleTwo.description}}</div>
+  </body>
+</html>

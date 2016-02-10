@@ -1,0 +1,18 @@
+<html ng-app="example">
+  <head>
+    <script src="angular.min.js"></script>
+    <script src="example.js"></script>
+  </head>
+  <body ng-controller="exampleControllerThree as exampleThree">
+  <form>
+	<div ng-repeat="pe in exampleThree.pe">
+			<div><b>Product Name: </b> {{pe.name}}</div>  
+			<div><b>Product Description</b></div> 
+			<div> {{pe.description}} </div> <BR>
+	</div>
+	
+	<div> name: <input ng-model="new.name"></div>
+	<div> description: <input ng-model="new.description"></div>
+	  <input type="submit" ng-click="exampleThree.update(new)" value="Save" />
+  </body>
+</html>
