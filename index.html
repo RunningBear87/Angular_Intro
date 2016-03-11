@@ -1,11 +1,11 @@
 <html ng-app="example">
   <head>
-    <script src="angular.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
     <script src="example.js"></script>
   </head>
   <body>
-	  <center><div id="sampleExpression">{{"Rethink " + "Group" | uppercase}}</div></center>
-	  <center><div id="dateExpression">{{'1399123412323' | date: 'MM/dd/yyyy @ h:mma'}}</div></center>
-	  <center><div id="LimitToExpression">{{'This is a very long sentence' | limitTo: 10}}</div></center>
+	  <div id="sampleExpression">{{"Rethink " + "Group" | uppercase}}</div>
+	  <div id="dateExpression">{{'1399123412323' | date: 'MM/dd/yyyy @ h:mma'}}</div>
+	  <div id="LimitToExpression">{{'This is a very long sentence' | limitTo: 10}}</div>
   </body>
 </html>
